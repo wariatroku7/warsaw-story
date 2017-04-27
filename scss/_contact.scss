@@ -1,0 +1,20 @@
+.contact-form{
+  color: $grey-dark;
+  h2{
+    text-align: center;
+    color: $grey-dark;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: $standard-padding;
+  }
+  .button{
+    background-color: $green;
+    padding:11px 16px 11px 16px;
+    color:#fff;
+    width:100%;
+    font-weight:bold;
+    &:hover,:active,:focus{
+      background-color:$green-dark;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<div class="welcome-trip" ng-style="{'background-image':'url(' + photos[details].bgimage + ')','background-size':'cover', 'background-position':'center'}">
+  <navbar-transparent></navbar-transparent>
+  <div class="container-standard trip-title">
+    <h1>{{photos[details].title}}</h1>
+  </div>
+</div>
+
+
+<div class="container-standard">
+  <div class="trip-block col-md-8">
+    <img src ng-src="{{photos[details].image}}"/>
+    <p>{{photos[details].paragraph1}}</p>
+    <p>{{photos[details].paragraph2}}</p>
+    <p>{{photos[details].paragraph3}}</p>
+    <p>{{photos[details].paragraph4}}</p>
+  </div>
+  <div class="col-md-4">
+    <div class="map">
+      <img src ng-src="{{photos[details].map}}"/>
+    </div>
+    <div class="reservation">
+      <h6>Czas trwania: {{photos[details].duration}}</h6>
+      <h6>Koszt: {{photos[details].price}}zł/osoba</h6>
+      <a class="button-reserve" href="#/trips">Rezerwuj</a>
+    </div>
+    <div class="blog-side" style="padding-left: 10px;margin-top: 20px;padding-bottom: 10px;">
+      <h5>Pozostałe wycieczki</h5>
+      <div ng-repeat="photo in photos | limitTo: 6">
+        <a href="#/trips/{{photos.indexOf(photo)}}">
+          <div ng-if="details != photos.indexOf(photo)">
+            <div class="recommended">
+              <img ng-src="{{photo.image}}" />
+              <h6>{{photo.title | limitTo: 23}}</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

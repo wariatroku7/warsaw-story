@@ -1,0 +1,21 @@
+{
+  "name": "warsaw-story",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+    },
+  "author": "wariatroku7",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.0",
+    "webpack": "^1.13.2",
+    "live-server": "^1.2.0"
+  }
+}

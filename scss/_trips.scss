@@ -1,0 +1,31 @@
+.trips{
+  text-align: center;
+  color: $grey-dark;
+  h2{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: $small-padding;
+  }
+  h5{
+    font-size: 20px;
+    padding-bottom: $big-padding;
+  }
+  a{
+    &:hover,:focus{
+      text-decoration:none;
+    }
+    .tripscontainer{
+      height: 267px;
+      margin-bottom:$standard-padding;
+      width: 100%;
+      display: table;
+      h3{
+        display: table-cell;
+        vertical-align: middle;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #4c4c4c;
+      }
+    }
+  }
+}

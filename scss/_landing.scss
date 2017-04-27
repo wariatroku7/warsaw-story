@@ -1,0 +1,57 @@
+.background-cover {
+  background: url("../img/photos/warsaw_oldtown.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: #fff;
+  .titles {
+    text-align:center;
+    margin-top:15vh;
+    @media(max-width: 767px){
+      margin-top: 5vh;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    padding: 0px 0px 100px 0px;
+    .btn-primary {
+      overflow:hidden;
+      background-color: $orange;
+      padding:10px 15px 10px 15px;
+      opacity:0.9;
+      border:2px solid $orange;
+      font-weight:bold;
+      &:hover,:active,:focus{
+        opacity:1;
+      }
+    }
+    .btn-transparent {
+      overflow:hidden;
+      padding:10px 15px 10px 15px;
+      color: #fff;
+      font-weight:bold;
+      background:none;
+      border: 2px solid #fff;
+      &:hover,:active,:focus{
+        background-color:#fff;
+        color:$orange;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+      text-transform: uppercase;
+      font-weight:bold;
+      @media(max-width: 767px){
+        font-size: 40px;
+      }
+    }
+    h3 {
+      overflow:hidden;
+      font-size:25px;
+      padding-bottom:50px;
+      font-weight:bold;
+      @media(max-width: 767px){
+        font-size: 20px;
+      }
+    }
+  }
+}

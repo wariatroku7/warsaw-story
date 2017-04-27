@@ -1,0 +1,22 @@
+/* variables */
+@import "dimensions";
+@import "colors";
+@import "utils";
+
+/*common styles */
+@import "fonts";
+@import "common";
+
+/* bootstrap */
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* main page sections */
+@import "navbar";
+@import "landing";
+@import "trips";
+@import "rentguide";
+@import "blogstories";
+@import "blogarticle";
+@import "contact";
+@import "footer";
+@import "trip";

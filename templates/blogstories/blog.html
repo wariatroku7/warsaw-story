@@ -1,0 +1,15 @@
+<navbar-white></navbar-white>
+<div class="container-wide blog-grid" ng-controller="BlogStoriesController as stories">
+  <h2>Blog Warsaw Story</h2>
+  <div ng-repeat="story in stories">
+    <div class="col-md-4">
+      <a href="#/blogstories/{{stories.indexOf(story)}}">
+        <div class="blogstory">
+          <img ng-src="{{story.image}}"  />
+          <h3>{{story.title}}</h3>
+          <p>{{story.paragraph1 | limitTo : 140}}...</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

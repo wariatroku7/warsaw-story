@@ -1,0 +1,25 @@
+<navbar-white></navbar-white>
+<div class="container-standard">
+  <div class="blog-article col-md-9">
+    <h2>{{stories[details].title}}</h2>
+    <h6>{{stories[details].date}}, <b>@{{stories[details].author}}</b></h6>
+    <img ng-src="{{stories[details].image}}"/>
+    <p>{{stories[details].paragraph1}}</p>
+    <p>{{stories[details].paragraph2}}</p>
+    <p>{{stories[details].paragraph3}}</p>
+    <p>{{stories[details].paragraph4}}</p>
+  </div>
+  <div class="col-md-3 blog-side" >
+    <h5>Pozostałe artykuły</h5>
+    <div ng-repeat="story in stories">
+      <a href="#/blogstories/{{stories.indexOf(story)}}">
+        <div ng-if="details != stories.indexOf(story)">
+          <div class="recommended">
+            <img ng-src="{{story.image}}" />
+            <h6>{{story.title | limitTo: 23}}</h6>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="bootstrap-iso contact-form container-standard">
+  <h2>Skontaktuj się z nami, aby zamówić wycieczkę</h2>
+  <div class="container-extra-small" style="padding-top: 20px">
+    <div class="row">
+      <div class="col-md-12 col-sm-6 col-xs-12">
+        <form method="post">
+          <div class="form-group ">
+            <label class="control-label requiredField" for="message">
+              Tytuł wiadomości
+            </label>
+            <input class="form-control" name="title" type="text" ng-model="title"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label " for="message">
+              Treść wiadomości
+            </label>
+            <textarea id="message" class="form-control" cols="40" name="message" rows="10" ng-model="text"></textarea>
+          </div>
+
+                <a ng-href="mailto:michalkrzysztoftomczak@gmail.com?subject={{title}}&body={{text}}" class="btn button">
+                    Wyślij
+                </a>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

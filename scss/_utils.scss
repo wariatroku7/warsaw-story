@@ -1,0 +1,26 @@
+@mixin all-browsers($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+
+@mixin background-cover()
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* fallback dla rozmiaru tła */
+    @include all-browsers(background-size, 100%);
+    /* rozmiar tła */
+    @include all-browsers(background-size, cover);
+}
+
+@mixin container-dimensions($widthMultiplier){
+  max-width: ($container-width*($widthMultiplier));
+  overflow: hidden;
+  margin: 0 auto;
+  padding-left:$standard-padding;
+  padding-right:$standard-padding;
+  padding-top: 50px;
+}

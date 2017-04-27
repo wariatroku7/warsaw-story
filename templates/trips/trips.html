@@ -1,0 +1,13 @@
+<div class="trips container-standard" ng-controller="TripsPhotosController as photos">
+  <h2 style="padding-top: 0px;margin-top:0px;">Zapraszamy na nasze wycieczki</h2>
+  <h5>Poznaj niezwykłe dziedzictwo miasta, na którym historia odcisnęła krwawe piętno</h5>
+  <div ng-repeat="photo in photos | limitTo: 6">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <a href="#/trips/{{photos.indexOf(photo)}}">
+        <div class="tripscontainer" ng-style="{'background-image':'url(' + photo.image + ')','background-repeat': 'no-repeat', 'background-position':'center', 'background-size': 'cover'}">
+          <h3>{{photo.title}}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

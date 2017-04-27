@@ -1,0 +1,73 @@
+
+.welcome-trip {
+  width: 100%;
+  overflow: hidden;
+  .trip-title {
+    color: white;
+    padding-top:300px;
+    @media(max-width: 767px){
+      padding-top: 100px;
+    }
+    h1 {
+      font-size:50px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.trip-block {
+  background-color: #fff;
+  overflow: hidden;
+  color: #grey-dark;
+  text-align: left;
+  img {
+    width: 100%;
+  }
+  p {
+    font-size:16px;
+    &:first-of-type{
+      padding-top: $standard-padding;
+    }
+  }
+}
+
+.map {
+  overflow:hidden;
+  padding-left:0px;
+  margin-bottom:20px;
+  height:320px;
+}
+
+.reservation {
+  padding-top:60px;
+  padding-bottom:60px;
+  overflow:hidden;
+  border: 3px solid #2fbbbc;
+  border-radius:3px;
+  color: $grey-dark;
+  text-align:center;
+  font-size: 25px;
+  h6 {
+    font-size:25px;
+    padding-bottom:10px;
+  }
+  .button-reserve {
+    background-color: $orange;
+    padding:12px 17px 12px 17px;
+    opacity:0.9;
+    color:#fff;
+    font-size:14px;
+    cursor:pointer;
+    border-radius:4px;
+    font-weight:bold;
+    text-decoration:none;
+    &:hover,:active,:focus,:visited,:link{
+      opacity:1;
+      color:#fff;
+      background-color:$orange;
+      text-decoration:none;
+    }
+  }
+}
